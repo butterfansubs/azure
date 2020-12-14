@@ -24,6 +24,7 @@ Style: Alternate,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 10,0:00:00.00,0:00:00.00,Default,,0,0,0,,== Dialogue ============================
 Dialogue: 0,0:00:07.09,0:00:09.22,Alternate,,0,0,0,TL,Konjitsu doyoubi UPS online.
 Dialogue: 0,0:00:09.22,0:00:11.62,Alternate,,0,0,0,TL,
 Dialogue: 0,0:00:11.62,0:00:13.69,Alternate,,0,0,0,TL,
@@ -40,3 +41,4 @@ Dialogue: 0,0:00:21.54,0:00:22.67,Default,,0,0,0,,Azu, now!
 Dialogue: 0,0:00:31.61,0:00:32.87,Default,,0,0,0,,We did it, Azu!
 Dialogue: 0,0:00:33.15,0:00:34.15,Default,,0,0,0,,We did!
 Dialogue: 0,0:00:37.25,0:00:41.08,Default,,0,0,0,,Windows Azure, Japan Data Center: Start!
+Comment: 0,0:00:00.00,0:00:00.00,Sign,,0,0,0,,== Signs ===============================
