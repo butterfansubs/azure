@@ -30,20 +30,20 @@ Comment: 10,0:00:00.00,0:00:00.00,Default,,0,0,0,,== Dialogue ==================
 Comment: 0,0:00:07.09,0:00:09.22,Alternate,,0,0,0,TL,Konjitsu doyoubi UPS online.
 Comment: 0,0:00:09.22,0:00:11.62,Alternate,,0,0,0,TL,
 Comment: 0,0:00:11.62,0:00:13.69,Alternate,,0,0,0,TL,
-Dialogue: 0,0:00:09.22,0:00:11.62,Default,,0,0,0,,It's hopeless{alt. "This is bad", "It's no use"}. We won't make it!
-Dialogue: 0,0:00:11.62,0:00:13.10,Default,,0,0,0,,What am I going to do?
-Dialogue: 0,0:00:13.10,0:00:15.76,Default,,0,0,0,,Azu, you look like you're in trouble. Let me help you!
-Dialogue: 0,0:00:15.76,0:00:17.03,Default,,0,0,0,,Claudia!
-Dialogue: 0,0:00:17.03,0:00:20.93,Default,,0,0,0,,Initializing startup sequence.
-Dialogue: 0,0:00:17.93,0:00:20.93,Default,,0,0,0,,All hosts booted.
-Dialogue: 0,0:00:18.73,0:00:20.93,Default,,0,0,0,,Network agents online.
-Dialogue: 0,0:00:19.46,0:00:20.93,Default,,0,0,0,,All systems green.
-Dialogue: 0,0:00:19.88,0:00:20.93,Default,,0,0,0,,Windows Azure,
-Dialogue: 0,0:00:20.93,0:00:21.76,Default,,0,0,0,,system boot.
-Dialogue: 0,0:00:21.54,0:00:22.67,Default,,0,0,0,,Azu, now!
-Dialogue: 0,0:00:31.61,0:00:32.87,Default,,0,0,0,,We did it, Azu!
-Dialogue: 0,0:00:33.15,0:00:34.15,Default,,0,0,0,,We did!
-Dialogue: 0,0:00:37.25,0:00:41.08,Default,,0,0,0,,Windows Azure, Japan Data Center: Start!
+Dialogue: 0,0:00:09.22,0:00:11.62,Default,Ruri,0,0,0,,It's hopeless{alt. "This is bad", "It's no use"}. We won't make it!
+Dialogue: 0,0:00:11.62,0:00:13.10,Default,Ruri,0,0,0,,What am I going to do?
+Dialogue: 0,0:00:13.10,0:00:15.76,Default,Claudia,0,0,0,,Azu, you look like you're in trouble. Let me help you!
+Dialogue: 0,0:00:15.76,0:00:17.03,Default,Ruri,0,0,0,,Claudia!
+Dialogue: 0,0:00:17.03,0:00:20.93,Default,Claudia,0,0,0,,Initializing startup sequence.
+Dialogue: 0,0:00:17.93,0:00:20.93,Default,Claudia,0,0,0,,All hosts booted.
+Dialogue: 0,0:00:18.73,0:00:20.93,Default,Claudia,0,0,0,,Network agents online.
+Dialogue: 0,0:00:19.46,0:00:20.93,Default,Claudia,0,0,0,,All systems green.
+Dialogue: 0,0:00:19.88,0:00:20.93,Default,Claudia,0,0,0,,Windows Azure,
+Dialogue: 0,0:00:20.93,0:00:21.76,Default,Claudia,0,0,0,,system boot.
+Dialogue: 0,0:00:21.54,0:00:22.67,Default,Claudia,0,0,0,,Azu, now!
+Dialogue: 0,0:00:31.61,0:00:32.87,Default,Claudia,0,0,0,,We did it, Azu!
+Dialogue: 0,0:00:33.15,0:00:34.15,Default,Ruri,0,0,0,,We did!
+Dialogue: 0,0:00:37.25,0:00:41.08,Default,Claudia+Ruri,0,0,0,,Windows Azure, Japan Data Center: Start!
 Comment: 0,0:00:00.00,0:00:00.00,Sign,,0,0,0,,== Signs ===============================
 Comment: 0,0:00:44.52,0:00:51.53,Signs,,0,0,0,,# CAST
 Dialogue: 0,0:00:44.52,0:00:51.53,Signs,,0,0,0,,{\pos(780,226)}Claudia Madobe
