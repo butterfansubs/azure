@@ -27,9 +27,9 @@ Style: Mask,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 10,0:00:00.00,0:00:00.00,Default,,0,0,0,,== Dialogue ============================
-Dialogue: 0,0:00:07.09,0:00:09.22,Alternate,,0,0,0,TL,Konjitsu doyoubi UPS online.
-Dialogue: 0,0:00:09.22,0:00:11.62,Alternate,,0,0,0,TL,
-Dialogue: 0,0:00:11.62,0:00:13.69,Alternate,,0,0,0,TL,
+Comment: 0,0:00:07.09,0:00:09.22,Alternate,,0,0,0,TL,Konjitsu doyoubi UPS online.
+Comment: 0,0:00:09.22,0:00:11.62,Alternate,,0,0,0,TL,
+Comment: 0,0:00:11.62,0:00:13.69,Alternate,,0,0,0,TL,
 Dialogue: 0,0:00:09.22,0:00:11.62,Default,,0,0,0,,It's hopeless{alt. "This is bad", "It's no use"}. We won't make it!
 Dialogue: 0,0:00:11.62,0:00:13.10,Default,,0,0,0,,What am I going to do?
 Dialogue: 0,0:00:13.10,0:00:15.76,Default,,0,0,0,,Azu, you look like you're in trouble. Let me help you!
