@@ -19,3 +19,7 @@
 !private.properties.sample
 !gradle/wrapper/*
 .gradle
+
+# Build targets and temporary files
+dist/
+build/

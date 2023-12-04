@@ -1,4 +1,3 @@
-
 import myaa.subkt.ass.*
 import myaa.subkt.tasks.*
 import myaa.subkt.tasks.Mux.*
@@ -10,129 +9,73 @@ plugins {
     id("myaa.subkt")
 }
 
+fun getGitHash(): String {
+    val proc = ProcessBuilder("git", "rev-parse", "HEAD")
+            .redirectOutput(ProcessBuilder.Redirect.PIPE)
+            .start()
+
+    return proc.inputStream.reader().readText().trim() ?: ""
+}
+
 subs {
-    readProperties("sub.properties")
+    readProperties("sub.properties", "private.properties")
     episodes(getList("episodes"))
-    release(arg("release") ?: "TV")
-    batches(getMap("batches", "episodes"))
+
+    val script by task<ASS> {
+        from(get("script"))
+
+        val git_hash = getGitHash()
+
+        ass {
+            for (line in events.lines) {
+                if (line.comment) {
+                    line.text = line.text.replace("%GIT_HASH%", git_hash)
+                }
+            }
+        }
+    }
 
     merge {
-        from(get("dialogue")) {
-            incrementLayer(10)
-        }
+        from(script.item())
 
-        from(getList("typesetting"))
+        includeProjectGarbage(false)
+        includeExtraData(false)
 
-        from(get("OP")) {
-            syncTargetTime(getAs<Duration>("opsync"))
-        }
-
-        from(get("ED")) {
-            syncTargetTime(getAs<Duration>("edsync"))
-        }
-
-        // alternatively, using a merge scripts template:
-        // fromMergeTemplate(get("mergetemplate"))
-    }
-
-    chapters {
-        from(get("chapters"))
-    }
-
-    swap {
-        from(merge.item())
+        out(get("mergefile"))
     }
 
     mux {
+        // uncomment this line to disable font validation if necessary
+        // verifyFonts(false)
+        skipUnusedFonts(true)
+
         title(get("title"))
 
         from(get("premux")) {
-            audio {
-                if (track.lang == "eng") {
-                    name("English")
-                    trackOrder(1)
-                } else {
-                    name("Japanese")
-                    trackOrder(2)
-                }
+            video {
+                lang("jpn")
+                default(true)
             }
+            audio {
+                lang("jpn")
+                default(true)
+            }
+            includeChapters(false)
+            attachments { include(false) }
         }
 
         from(merge.item()) {
             tracks {
-                name("English")
+                name(get("group"))
                 lang("eng")
                 default(true)
             }
-        }
-
-        from(swap.item()) {
-            tracks {
-                name("English (Honorifics)")
-                lang("enm")
-            }
-        }
-
-        chapters(chapters.item()) {
-            lang("eng")
         }
 
         attach(get("fonts")) {
             includeExtensions("ttf", "otf")
         }
 
-        attach(get("songfonts")) {
-            includeExtensions("ttf", "otf")
-        }
-
         out(get("muxfile"))
-    }
-
-    alltasks {
-        torrent {
-            trackers(getList("trackers"))
-
-            from(mux.batchItems()) {
-                if (isBatch) {
-                    into(get("batchdir"))
-                }
-            }
-
-            out(get("torrentfile"))
-        }
-
-        nyaa {
-            from(torrent.item())
-            username(get("torrentuser"))
-            password(get("torrentpass"))
-            category(NyaaCategories.ANIME_ENGLISH)
-            hidden(true)
-            information(get("torrentinfo"))
-            torrentDescription(getFile("torrent_description.txt"))
-        }
-
-        // upload with SFTP (configuration read from ~/.ssh/config)
-        val uploadFiles by task<SFTP> {
-            from(mux.batchItems()) {
-                if (isBatch) {
-                    into(get("batchdir"))
-                }
-            }
-
-            into(get("sftpfiledir"))
-
-            host(get("sftphost"))
-        }
-
-        val startSeeding by task<SFTP> {
-            // upload files to seedbox and publish to nyaa before initiating seeding
-            dependsOn(uploadFiles.item(), nyaa.item())
-
-            from(torrent.item())
-
-            into(get("sftptorrentdir"))
-
-            host(get("sftphost"))
-        }
     }
 }
