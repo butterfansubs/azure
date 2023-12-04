@@ -30,8 +30,8 @@ Comment: 10,0:00:00.00,0:00:00.00,Default,,0,0,0,,== Dialogue ==================
 Comment: 0,0:00:07.09,0:00:09.22,Alternate,,0,0,0,TL,Konjitsu doyoubi UPS online.
 Comment: 0,0:00:09.22,0:00:11.62,Alternate,,0,0,0,TL,
 Comment: 0,0:00:11.62,0:00:13.69,Alternate,,0,0,0,TL,
-Dialogue: 0,0:00:09.22,0:00:11.62,Default,Ruri,0,0,0,,It’s hopeless{alt. "This is bad", "It’s no use"}. We won’t make it!
-Dialogue: 0,0:00:11.62,0:00:13.10,Default,Ruri,0,0,0,,What am I going to do?
+Dialogue: 0,0:00:09.22,0:00:11.62,Default,Ruri,0,0,0,,{\i1}It’s hopeless{alt. "This is bad", "It’s no use"}. We won’t make it!
+Dialogue: 0,0:00:11.62,0:00:13.10,Default,Ruri,0,0,0,,{\i1}What am I going to do?
 Dialogue: 0,0:00:13.10,0:00:15.76,Default,Claudia,0,0,0,,Azu, you look like you’re in trouble. \NLet me help you!
 Dialogue: 0,0:00:15.76,0:00:17.03,Default,Ruri,0,0,0,,Claudia!
 Dialogue: 0,0:00:17.03,0:00:17.93,Default,Claudia,0,0,0,,{\an8\clip(0,0,1920,1080)}Initializing startup sequence.
