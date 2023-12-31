@@ -47,7 +47,7 @@ Dialogue: 11,0:00:19.47,0:00:20.93,Default,Claudia,1,966,0,,{\clip(0,548,704,108
 Dialogue: 10,0:00:19.46,0:00:20.93,Default,Claudia,718,1,0,,{\clip(718,0,1920,1080)}All systems green.
 Dialogue: 10,0:00:20.00,0:00:20.93,Default,Claudia,718,1,0,,{\an8\clip(718,0,1920,1080)}Windows Azure,
 Dialogue: 10,0:00:20.93,0:00:21.76,Default,Claudia,718,1,0,,{\an8\clip(718,0,1920,414)}Windows Azure,\Nsystem launch.
-Dialogue: 10,0:00:21.47,0:00:22.67,Default,Claudia,0,0,0,,Azu, now!
+Dialogue: 10,0:00:21.47,0:00:22.67,Default,Claudia,0,0,0,,{\t(952,0,0.75,\1c&HFFFFFF&\3c&HFFFFFF&\4c&HFFFFFF&)}Azu, now!
 Dialogue: 10,0:00:31.61,0:00:32.87,Default,Claudia,0,0,0,,We did it, Azu!
 Dialogue: 10,0:00:33.08,0:00:34.15,Default,Ruri,0,0,0,,Yeah, we did!
 Dialogue: 10,0:00:37.25,0:00:41.08,Default,Claudia+Ruri,0,0,0,,Windows Azure, Japan Data Center: Start!
