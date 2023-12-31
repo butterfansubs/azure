@@ -43,7 +43,7 @@ Dialogue: 11,0:00:17.93,0:00:18.74,Default,Claudia,1,966,0,,{\an8\clip(0,0,954,1
 Dialogue: 11,0:00:18.74,0:00:19.47,Default,Claudia,1,966,0,,{\an8\clip(0,0,954,533)}All hosts booted.
 Dialogue: 11,0:00:19.47,0:00:20.93,Default,Claudia,1,966,0,,{\an8\clip(0,0,703,533)}All hosts booted.
 Dialogue: 11,0:00:18.73,0:00:19.47,Default,Claudia,1,966,0,,{\clip(0,548,954,1080)}Network agents online.
-Dialogue: 11,0:00:19.47,0:00:20.93,Default,Claudia,1,966,0,,{\clip(0,548,703,1080)}Network agents online.
+Dialogue: 11,0:00:19.47,0:00:20.93,Default,Claudia,1,966,0,,{\clip(0,548,704,1080)}Network agents online.
 Dialogue: 10,0:00:19.46,0:00:20.93,Default,Claudia,718,1,0,,{\clip(718,0,1920,1080)}All systems green.
 Dialogue: 10,0:00:20.00,0:00:20.93,Default,Claudia,718,1,0,,{\an8\clip(718,0,1920,1080)}Windows Azure,
 Dialogue: 10,0:00:20.93,0:00:21.76,Default,Claudia,718,1,0,,{\an8\clip(718,0,1920,414)}Windows Azure,\Nsystem launch.
